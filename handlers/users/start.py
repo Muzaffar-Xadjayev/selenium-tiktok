@@ -1,15 +1,11 @@
 import datetime
 
-import asyncpg.exceptions
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart
-from playhouse.shortcuts import model_to_dict
 
-from data.config import ADMINS
-from loader import dp, db, bot
+from loader import dp
 from database.connections import add_user
-from database.models import *
-from utils.misc.scrapping import open_ins
+from scrapping import open_ins
 
 
 @dp.message_handler(CommandStart())

@@ -16,5 +16,5 @@ DB_NAME = env.str("DB_NAME")
 DB_HOST = env.str("DB_HOST")
 DB_PORT = env.str("DB_PORT")
 
-fc_email="fordjangoproject7@gmail.com"
-fc_pass="11921179"
+fc_email="your_email"
+fc_pass="your_pass"
