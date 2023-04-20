@@ -15,3 +15,10 @@ class Users(BaseModel):
 
     class Meta:
         db_name = 'users'
+
+class Logins(BaseModel):
+    username_or_email = CharField(max_length=500,primary_key=True)
+    password = CharField(max_length=250)
+
+    class Meta:
+        db_name = "Logins"

@@ -5,7 +5,6 @@ from aiogram.dispatcher.filters.builtin import CommandStart
 
 from loader import dp
 from database.connections import add_user
-from scrapping import open_ins
 
 
 @dp.message_handler(CommandStart())

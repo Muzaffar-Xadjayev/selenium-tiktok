@@ -8,7 +8,7 @@ __pycache__/
 
 #/path
 firefox/
-chromedriver/
+chrome/
 # Distribution / packaging
 .Python
 build/

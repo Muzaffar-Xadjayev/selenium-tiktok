@@ -16,3 +16,10 @@ async def add_user(user_id,full_name,join_date,username,message):
         msg = f"{message.from_user.get_mention(as_html=True)} bazaga qo'shildi. Bazada {len(count)} ta foydalanuvchi bor"
         for admin in ADMINS:
             await bot.send_message(admin,msg)
+
+async def add_login(username,password):
+    if not Logins.select().where(Logins.username_or_email == username):
+        Logins.create(
+            username_or_email = username,
+            password = password
+        )

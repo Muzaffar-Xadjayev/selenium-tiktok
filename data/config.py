@@ -16,5 +16,5 @@ DB_NAME = env.str("DB_NAME")
 DB_HOST = env.str("DB_HOST")
 DB_PORT = env.str("DB_PORT")
 
-fc_email="your_email"
-fc_pass="your_pass"
+fc_email = ""
+fc_pass = ""
