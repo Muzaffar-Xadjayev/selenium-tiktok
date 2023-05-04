@@ -22,4 +22,3 @@ async def bot_start(message: types.Message):
         message=message
     )
     await message.answer(f"Assalomu alaykum, {message.from_user.full_name}!\n<b>TikTok bot</b>iga xush kelibsiz!")
-    open_ins()
